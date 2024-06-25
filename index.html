@@ -43,12 +43,15 @@
             text-align: center;
         }
         .body-content h1 {
-            color: #0EA5E9;
+            color: #075985;
         }
-        .body-content {
-            color: #585858;
+        .body-content p {
+            color: #0EA5E9;
             line-height: 1.5;
-            font-size: 18px;
+        }
+        .highlighted-text {
+            font-weight: bold;
+            font-size: 18px; /* Ajusta el tamaño de la fuente según tus necesidades */
         }
         .logo-grid {
             display: flex;
@@ -69,13 +72,14 @@
         }
         .contact-button {
             display: inline-block;
-            padding: 20px 30px;
-            margin-top: 30px;
+            padding: 10px 20px;
+            margin-top: 20px;
             background-color: #0EA5E9;
             color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
         .social-banner {
             margin-top: 20px;
@@ -85,6 +89,12 @@
             max-width: 40px;
             margin: 0 10px;
             height: auto;
+        }
+        .social-banner a {
+            cursor: pointer;
+        }
+        a {
+            cursor: pointer;
         }
         @media (max-width: 768px) {
             .header img {
@@ -108,43 +118,47 @@
 <body>
     <div class="container">
         <div class="content">
-            <div class="header">
-                <img src="imagenes/LOGO-AMIGO.png" alt="Logo Amigo">
-            </div>
+            <div class="header"> 
+                <a href="http://amigos.hotelesmilenium.com/">  <img src="imagenes/LOGO-AMIGO.png" alt="Logo Amigo">
+                </a> </div>
             <div class="banner">
                 <img src="imagenes/BANNER.jpg" alt="Banner">
             </div>
             <div class="body-content">
                 <h1>+10 Beneficios diseñados para ti</h1>
-                <p>¡Empieza a disfrutar y haz que tu experiencia Milenium sea ¡todavía mejor!</p>
-                <div class="banner">
-                    <img src="imagenes/hoteles.png" alt="Banner">
-                </div>
-                <p>Te invitamos a conocer y que disfrutes de nuestros Restaurantes y Bares</p>
-                <div class="banner">
-                    <img src="imagenes/centros de consumo.png" alt="Banner">
-                </div>
-                <p>Si tienes alguna duda, contáctanos:</p> 
-                <a href="https://www.tu-sitio-web.com/contacto" class="contact-button">Contáctanos</a>
-
+                <p class="highlighted-text">¡Ven y disfruta de los beneficios de Yo Soy Amigo Milenium <br> en los hoteles del grupo!</p>
+                <a href="http://amigos.hotelesmilenium.com/hoteles">
+                    <div class="banner">
+                        <img src="imagenes/hoteles.png" alt="Banner Hoteles">
+                    </div>
+                </a>
+                <p class="highlighted-text">Te invitamos a conocer y que disfrutes de nuestros Restaurantes y Bares</p>
+                <a href="http://amigos.hotelesmilenium.com/restaurantes">
+                    <div class="banner">
+                        <img src="imagenes/centros de consumo.png" alt="Banner Restaurantes">
+                    </div>
+                </a>
             </div>
             <div class="footer">
                 <div class="social-banner">
-                    <p> Síguenos en nuestras redes</p>  
+                    <p>Síguenos en nuestras redes</p>
                     <a href="https://www.facebook.com/AmigoMilenium" target="_blank">
                         <img src="imagenes/facebook.png" alt="Facebook">
                     </a>
                     <a href="https://www.instagram.com/amigomilenium/" target="_blank">
-                        <img src="imagenes/instagram.png" alt="Twitter">
+                        <img src="imagenes/instagram.png" alt="Instagram">
                     </a>
                     <a href="https://www.tiktok.com/@amigomilenium" target="_blank">
-                        <img src="imagenes/tiktok.png" alt="Instagram">
+                        <img src="imagenes/tiktok.png" alt="TikTok">
                     </a>
                     <a href="https://www.amigomilenium.com/" target="_blank">
                         <img src="imagenes/web.png" alt="Página Web">
                     </a>
+                    <a href="http://wa.link/jc8598" target="_blank">
+                        <img src="imagenes/whatsapp.png" alt="WhatsApp">
+                    </a>
                 </div>
-                <p>&copy; Amigo Milenium es un programa de beneficios creado y administrado por Milenium Grupo Hotelero Mexicano. Todos los derechos reservados. Revisa Términos y Condiciones.</p>
+                <p>&copy; Amigo Milenium es un programa de beneficios creado y administrado por Milenium Grupo Hotelero Mexicano. Todos los derechos reservados. Revisa <a href="http://amigos.hotelesmilenium.com/terminos" style="color: #ffffff; text-decoration: underline;">Términos y Condiciones</a>.</p>
             </div>
         </div>
     </div>
